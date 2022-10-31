@@ -1,4 +1,4 @@
-import userEvent from "@testing-library/user-event";
+
 
 function Tweet(props) {
  const {name, image, handle} = props.tweet.user
