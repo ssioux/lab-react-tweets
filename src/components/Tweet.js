@@ -1,8 +1,11 @@
-function Tweet() {
+import userEvent from "@testing-library/user-event";
+
+function Tweet(props) {
+ const {name, image, handle} = props.tweet.user
   return (
     <div className="tweet">
       <img
-        src="https://i.imgur.com/9yw1Fyw.jpg"
+        src={image}
         className="profile"
         alt="profile"
       />
