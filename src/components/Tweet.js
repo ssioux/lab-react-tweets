@@ -1,9 +1,10 @@
 import ProfileImage from "./ProfileImage";
 import User from "./User";
-import Timestamp from "./Timestamp"  
+import Timestamp from "./Timestamp"
+import Message from "./Message"; 
 
 function Tweet(props) {
-const {timestamp}= props.tweet
+const {timestamp, message}= props.tweet
  
   return (
     <div className="tweet">
@@ -30,10 +31,7 @@ const {timestamp}= props.tweet
           <Timestamp time={timestamp}/>
         </div>
 
-        <p className="message">
-          On December 7th, we will be hosting a #webinar that will introduce you
-          to #SQL! Are you ready? 🚀
-        </p>
+      <Message comment={message}/>
 
         <div className="actions">
           {/* Font Awesome icons */}

@@ -1,5 +1,5 @@
 function User(props){
-    console.log(props)
+
 
     return (
         <span className="user">
